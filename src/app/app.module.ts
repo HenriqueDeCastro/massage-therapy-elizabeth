@@ -3,14 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FooterModule } from './shared/components/footer/footer.module';
 import { ToolbarModule } from './shared/components/toolbar/toolbar.module';
 
 @NgModule({
   declarations: [ AppComponent ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    ToolbarModule
+    FooterModule,
+    ToolbarModule,
+    AppRoutingModule
   ],
   providers:[
     {

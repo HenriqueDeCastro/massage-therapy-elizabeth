@@ -1,0 +1,41 @@
+.button {
+  width: 75vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem;
+  border: 0;
+  border-radius: 5px;
+  gap: 1rem;
+  flex: 1;
+  text-decoration: none;
+  color: black;
+
+  &__image {
+    width: 2rem;
+  }
+
+  &__text-container {
+    text-align: left;
+    font-family: "Montserrat";
+
+    &__title {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.green {
+  background-color: #7CE4A3;
+}
+
+.blue {
+  background-color: #94C2E5;
+}
+
+@media screen and (min-width: 800px) {
+  .button {
+    width: 300px;
+  }
+}

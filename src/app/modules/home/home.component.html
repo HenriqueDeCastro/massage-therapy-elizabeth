@@ -1,6 +1,6 @@
-<section>
+<section #benefits>
     <div class="section-benefits">
-      <h1 class="title section-benefits__title">Benefícios da Massagem</h1>
+      <h1 class="section-benefits__title">Benefícios da Massagem</h1>
       <p class="section-benefits__text-info">
         As pessoas que não conhecem muito bem os benefícios da massagem associam a prática somente para o relaxamento como objetivo,
         porém, a massagem é capaz de proporcionar diversos outros benefícios físicos e emocionais, dos quais podemos destacar:
@@ -8,19 +8,19 @@
       <div class="cards-container">
         <app-card-info
           title="Reduz a Ansiedade"
-          imageUrl="../../../assets/images/card/ansiedade.svg"
+          imageUrl="assets/images/card/ansiedade.svg"
           colorName="blue"
           description="Reduz a ansiedade, combate a depressão e combate o estresse.">
         </app-card-info>
         <app-card-info
           title="Estimula a Circulação"
-          imageUrl="../../../assets/images/card/veias.svg"
+          imageUrl="assets/images/card/veias.svg"
           colorName="red"
           description="Estimula a circulação sanguínea e linfática e reduz a tensão e dor muscular.">
         </app-card-info>
         <app-card-info
           title="Elimina Toxinas"
-          imageUrl="../../../assets/images/card/toxinas.svg"
+          imageUrl="assets/images/card/toxinas.svg"
           colorName="purple"
           description="Elimina toxinas e resíduos metabólicos.">
         </app-card-info>
@@ -29,13 +29,12 @@
         Como vimos, os benefícios da massagem vão muito além do relaxamento
         e esta é uma prática já comprovada cientificamente para prevenção de doenças e promoção da saúde.
       </p>
-      <hr>
     </div>
 </section>
 
-<section>
+<section #price>
   <div class="section-price">
-    <h1 class="title section-price__title">Preços</h1>
+    <h1 class="section-price__title">Preços</h1>
     <div class="cards-price-container">
       <app-card-price
         title="Unitária"
@@ -52,6 +51,45 @@
           <span class="purple">14% de Desconto</span> em relação a Unitária.'
         colorName="purple">
       </app-card-price>
+    </div>
+  </div>
+</section>
+
+<section #local>
+  <div class="section-local">
+    <h1 class="section-local__title">Onde Trabalho</h1>
+    <p>Save Hair SPA Beleza e Saúde</p>
+    <p class="section-local__description">R. São Camilo, 527 - Vila Camilopolis, Santo André - SP, 09230-600</p>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.504744384483!2d-46.53269208528216!3d-23.622088369722263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5d4c06e42d07%3A0xa13d3d62a89e003!2sSave%20Hair%20SPA%20Beleza%20e%20Sa%C3%BAde%20para%20voc%C3%AA!5e0!3m2!1spt-BR!2sbr!4v1651182126968!5m2!1spt-BR!2sbr"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      class="section-local__maps">
+    </iframe>
+  </div>
+</section>
+
+<section #scheduling>
+  <div class="section-scheduling">
+    <h1 class="section-scheduling__title">Horários e Agendamento</h1>
+    <p>Todas as Terças, Quartas, Sextas e Sábados.</p>
+    <p>das 08:00h às 18:00h</p>
+    <p class="section-scheduling__scheduling-info">Agende um hórario via Whatsapp ou Telefonando:</p>
+    <div class="section-scheduling__scheduling-container">
+      <app-button-scheduling
+        imageUrl="assets/images/icons/whatsapp.svg"
+        title="Whatsapp"
+        description="Clique aqui e inicie a conversa!"
+        colorName="green"
+        redirectUrl="https://api.whatsapp.com/send/?phone=WhatsAppNumber5511930445353&text=&app_absent=1">
+      </app-button-scheduling>
+      <app-button-scheduling
+        imageUrl="assets/images/icons/telephone.svg"
+        title="Telefone"
+        description="4976-5353"
+        colorName="blue">
+      </app-button-scheduling>
     </div>
   </div>
 </section>

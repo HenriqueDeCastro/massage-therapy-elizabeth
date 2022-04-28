@@ -1,3 +1,4 @@
+import { ButtonSchedulingModule } from './components/button-scheduling/button-scheduling.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -12,6 +13,7 @@ import { CardPriceModule } from './components/card-price/card-price.module';
     CommonModule,
     CardInfoModule,
     CardPriceModule,
+    ButtonSchedulingModule,
     HomeRoutingModule
   ]
 })

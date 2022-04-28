@@ -1,0 +1,18 @@
+<ng-container *ngIf="redirectUrl else telephone">
+  <a [href]="redirectUrl" target="_blank" class="button {{colorName}}">
+    <img class="button__image" [src]="imageUrl" [alt]="title">
+    <div class="button__text-container">
+      <p class="button__text-container__title" [innerText]="title"></p>
+      <p class="button__text-container__description" [innerText]="description"></p>
+    </div>
+  </a>
+</ng-container>
+<ng-template #telephone>
+  <a href="{{'tel:'+ title}}" class="button {{colorName}}">
+    <img class="button__image" [src]="imageUrl" [alt]="title">
+    <div class="button__text-container">
+      <p class="button__text-container__title" [innerText]="title"></p>
+      <p class="button__text-container__description" [innerText]="description"></p>
+    </div>
+  </a>
+</ng-template>
