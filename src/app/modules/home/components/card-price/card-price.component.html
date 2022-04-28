@@ -1,0 +1,9 @@
+<div class="card">
+  <h3 class="card__title {{colorName}}">{{title}}</h3>
+  <hr>
+  <h2 class="card__price {{colorName}}">{{price | currency}}</h2>
+  <p class="card__description" [innerHTML]="description"></p>
+  <div class="card__container-button">
+    <a class="card__container-button__button {{colorName}}-border {{colorName}}">Agendar</a>
+  </div>
+</div>

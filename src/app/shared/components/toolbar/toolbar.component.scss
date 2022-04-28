@@ -1,0 +1,20 @@
+.toolbar {
+  display: flex;
+  justify-content: center;
+  background-color: var(--solid-brandy);
+
+  img {
+    width: 10rem;
+    margin: 0;
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .toolbar {
+    img {
+      width: 12rem;
+      padding: 1rem;
+    }
+  }
+}

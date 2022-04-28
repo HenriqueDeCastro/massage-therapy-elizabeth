@@ -1,1 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+@import './assets/scss/fonts.scss';
+@import './assets/scss/root-variables.scss';
+
+html, body { height: 100%; margin: 0; background-color: var(--light-brandy); }
+h1, h2, h3, p { margin: 0; }
+h1 { font-family: "Allura"; }
+p { font-family: "Montserrat"; }

@@ -1,0 +1,11 @@
+<div class="card">
+  <h3 class="card__title">{{title}}</h3>
+  <ng-container *ngIf="imageUrl">
+    <div class="card__card-container">
+      <div class="card__card-container__box {{colorName}}">
+        <img [src]="imageUrl" [alt]="title">
+      </div>
+    </div>
+  </ng-container>
+  <p class="card__description">{{description}}</p>
+</div>

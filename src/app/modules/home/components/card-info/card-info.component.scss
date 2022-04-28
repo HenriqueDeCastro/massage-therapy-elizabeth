@@ -1,0 +1,107 @@
+.card {
+  width: 100vw;
+  min-height: 100px;
+  padding: 0.5rem 0rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  grid-template-rows:  auto 1fr;
+  grid-template-areas: "title title image"
+                       "description description image";
+
+  &__title {
+    padding: 1rem 1rem 0rem;
+    font-family: "Montserrat";
+    font-weight: 500;
+    text-align: left;
+    grid-area: title;
+  }
+
+  &__card-container {
+    padding: 0.75rem;
+    grid-area: image;
+    display: flex;
+    align-items: center;
+
+    &__box {
+      padding: 0.75rem;
+      border-radius: 100%;
+
+      img {
+        width: 3.5rem;
+      }
+    }
+  }
+
+  &__description {
+    padding: 0rem 1rem 0.5rem;
+    font-size: 0.8rem;
+    text-align: left;
+    grid-area: description;
+  }
+}
+
+.blue {
+  background-color: #C5DCF1;
+}
+
+.red {
+  background-color: #FFB2B2;
+}
+
+.purple {
+  background-color: #EFE0EF;
+}
+
+@media screen and (min-width: 800px) {
+  .card {
+    grid-template-areas: inherit;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 250px;
+
+    &__title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0px;
+      height: 100%;
+    }
+
+    &__card-container {
+      padding: 0rem;
+      display: block;
+
+      &__box {
+        display: flex;
+        justify-content: center;
+        padding: 0.75rem;
+        border-radius: 0%;
+
+        img {
+          width: 3.5rem;
+        }
+      }
+    }
+
+    &__description {
+      padding: 1rem;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    grid-template-areas: inherit;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 250px;
+  }
+}
