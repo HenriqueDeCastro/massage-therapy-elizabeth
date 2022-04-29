@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { DEFAULT_CURRENCY_CODE, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -12,6 +13,7 @@ import { ToolbarModule } from './shared/components/toolbar/toolbar.module';
     BrowserModule,
     FooterModule,
     ToolbarModule,
+    RouterModule,
     AppRoutingModule
   ],
   providers:[
