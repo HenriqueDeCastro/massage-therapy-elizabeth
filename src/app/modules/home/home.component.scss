@@ -1,4 +1,4 @@
-.section-benefits {
+.section-me {
   color: var(--dark-brown);
   padding: 2rem 0rem 4rem;
 
@@ -13,7 +13,31 @@
   }
 
   &__text-info {
-    font-size: 0.9rem;
+    padding: 0px 1rem;
+  }
+
+  &__text-social-networks {
+    margin: 1.5rem 0rem 1rem;
+    padding: 0px 1rem;
+  }
+}
+
+
+.section-benefits {
+  color: var(--dark-brown);
+  padding: 0rem 0rem 4rem;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__text-info {
     padding: 0px 1rem;
   }
 
@@ -112,7 +136,6 @@
     padding: 2rem 5rem 4rem;
 
     &__text-info {
-      font-size: 0.9rem;
       padding: 0px;
     }
 
