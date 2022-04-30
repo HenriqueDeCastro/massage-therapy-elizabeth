@@ -57,6 +57,9 @@
       background-color:#ffffff80;
     }
 
+    &:last-child {
+      border-bottom: 1px solid red;
+    }
   }
 }
 
