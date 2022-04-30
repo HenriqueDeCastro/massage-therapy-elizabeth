@@ -48,17 +48,8 @@
     margin: 1.5rem 0rem 1.5rem;
     width: 100%;
 
-    app-card-info:nth-child(even) {
-      grid-auto-flow: dense;
-      direction: rtl;
-    }
-
     app-card-info:nth-child(odd) {
       background-color:#ffffff80;
-    }
-
-    &:last-child {
-      border-bottom: 1px solid red;
     }
   }
 }
