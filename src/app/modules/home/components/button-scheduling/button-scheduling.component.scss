@@ -10,6 +10,7 @@
   flex: 1;
   text-decoration: none;
   color: black;
+  min-height: 2rem;
 
   &__image {
     width: 2rem;
@@ -17,7 +18,7 @@
 
   &__text-container {
     text-align: left;
-    font-family: "Montserrat";
+    font-family: 'Montserrat', sans-serif;
 
     &__title {
       font-size: 1.25rem;

@@ -1,7 +1,10 @@
-@import './assets/scss/fonts.scss';
-@import './assets/scss/root-variables.scss';
-
 html, body { height: 100%; margin: 0; background-color: var(--light-brandy); }
 h1, h2, h3, p { margin: 0; }
-h1 { font-family: "Allura"; }
-p { font-family: "Montserrat"; white-space: normal; }
+h1 { font-family: 'Allura', cursive; }
+p { font-family: 'Montserrat', sans-serif; white-space: normal; }
+
+:root {
+  --solid-brandy: #E4B48A;
+  --light-brandy: #F3DFCD;
+  --dark-brown: #4D2E14
+}
