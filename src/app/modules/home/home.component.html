@@ -1,7 +1,7 @@
 <section id="me">
   <div class="section-me">
     <h1 class="section-me__title">Sobre Mim</h1>
-    <p class="section-me__text-info">Olá, meu nome é Elisabete Cristina e sou Massoterapeuta no ©Save Hair SPA Beleza e Saúde.</p>
+    <p class="section-me__text-info">Olá, meu nome é Elisabete Cristina e sou Massoterapeuta.</p>
     <p class="section-me__text-info">Trabalho com massagem relaxante e terapêutica para relaxamento, alívio e cura de dores musculares, articulações e stress.</p>
     <p class="section-me__text-social-networks">Me acompanhe nas redes sociais!</p>
     <div class="section-me__button">
@@ -59,7 +59,7 @@
 <section id="local">
   <div class="section-local">
     <h1 class="section-local__title">Onde Trabalho</h1>
-    <p>Save Hair SPA Beleza e Saúde</p>
+    <p class="section-local__subtitle">Save Hair SPA Beleza e Saúde</p>
     <p class="section-local__description">R. São Camilo, 527 - Vila Camilopolis, Santo André - SP, 09230-600</p>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.504744384483!2d-46.53269208528216!3d-23.622088369722263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5d4c06e42d07%3A0xa13d3d62a89e003!2sSave%20Hair%20SPA%20Beleza%20e%20Sa%C3%BAde%20para%20voc%C3%AA!5e0!3m2!1spt-BR!2sbr!4v1651182126968!5m2!1spt-BR!2sbr"
@@ -68,16 +68,8 @@
       referrerpolicy="no-referrer-when-downgrade"
       class="section-local__maps">
     </iframe>
-  </div>
-</section>
-
-<section id="scheduling">
-  <div class="section-scheduling">
-    <h1 class="section-scheduling__title">Horários e Agendamento</h1>
-    <p>As Terças, Quartas, Sextas e Sábados.</p>
-    <p>das 08:00h às 18:00h</p>
-    <p class="section-scheduling__scheduling-info">Agende um hórario via Whatsapp ou Telefonando:</p>
-    <div class="section-scheduling__scheduling-container">
+    <p class="section-local__scheduling-info">Agende um hórario via Whatsapp ou Telefonando:</p>
+    <div class="section-local__scheduling-container">
       <app-button-scheduling
         imageUrl="assets/images/icons/whatsapp.svg"
         title="Whatsapp"
@@ -90,6 +82,25 @@
         title="Telefone"
         description="4976-5353"
         colorName="blue">
+      </app-button-scheduling>
+    </div>
+    <p class="section-local__or">ou</p>
+    <p class="section-local__subtitle">Studio de Beleza | Sara Cristina</p>
+    <p class="section-local__description">R. Roque da Costa, 270 - Vila Alto Sto Andre, Santo André - SP, 09240-670</p>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.3126518231866!2d-46.52191790321046!3d-23.628971699999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce43f746261551%3A0x5e67404359e4af35!2z8J2agvCdmp3wnZqe8J2ajfCdmpLwnZqYIPCdmo3wnZqOIPCdmbHwnZqO8J2alfCdmo7wnZqj8J2aiiB8IPCdmoLwnZqK8J2am_Cdmoog8J2ZsvCdmpvwnZqS8J2anPCdmp3wnZqS8J2al_Cdmoo!5e0!3m2!1spt-BR!2sbr!4v1684801650440!5m2!1spt-BR!2sbr"      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      class="section-local__maps">
+    </iframe>
+    <p class="section-local__scheduling-info">Agende um hórario via Whatsapp:</p>
+    <div class="section-local__scheduling-container">
+      <app-button-scheduling
+        imageUrl="assets/images/icons/whatsapp.svg"
+        title="Whatsapp"
+        description="Clique aqui e inicie a conversa!"
+        colorName="green"
+        redirectUrl="https://api.whatsapp.com/send/?phone=WhatsAppNumber55011976317979&text=&app_absent=1">
       </app-button-scheduling>
     </div>
   </div>
