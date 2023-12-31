@@ -1,29 +1,27 @@
-# Massage Therapy Elizabeth
+# ComunidadeVida
 
-### Description:
-<div>
-  <p>
-    Project for a massage therapist presentation, including a link to instagram, whatsapp chat and a button to automatically open app phone on a smartphone with a call number.
-  </p>
-</div>
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.3.
 
-### Technologies Employed:
-<div>
-  <img alt="H-ANGULAR" src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white">
-  <img alt="H-HTML" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white">
-  <img alt="H-CSS" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white">
-</div>
+## Development server
 
-#### Desktop
-<img width="1425" alt="Captura de Tela 2022-06-03 às 21 59 40" src="https://user-images.githubusercontent.com/39351656/171970405-9744100c-2443-402e-b18a-92c23548d60b.png">
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
+## Code scaffolding
 
-#### Tablet
-<img width="403" alt="Captura de Tela 2022-06-03 às 21 59 24" src="https://user-images.githubusercontent.com/39351656/171970387-687bd22d-0594-44f5-b855-c7c978be101d.png">
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
+## Build
 
-#### Mobile
-<img width="305" alt="Captura de Tela 2022-06-03 às 21 58 56" src="https://user-images.githubusercontent.com/39351656/171970370-43ae1b82-43d6-45c5-905b-94c76d4f1cca.png">
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-### See the App working at this link:
-https://www.massoterapeuta-elisabete.com.br/home
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

@@ -1,0 +1,59 @@
+@use '@angular/material' as mat;
+@use '../../../../../assets/scss/theme.scss' as theme;
+
+.initiation {
+  &__bg-image {
+    background-image: url('../../../../../assets/images/background-site.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  &__logo {
+      width: 18rem;
+  }
+
+  &__location-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 2rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    color:  mat.get-theme-color(theme.$massoterapeuta-elisabete-theme, accent);
+    border: 1px solid  mat.get-theme-color(theme.$massoterapeuta-elisabete-theme, accent);
+    gap: 0.6rem;
+    border-radius: 5px;
+    margin-top: 4.5rem;
+
+    &:hover {
+      background-color: mat.get-theme-color(theme.$massoterapeuta-elisabete-theme, accent);
+      color: mat.get-theme-color(theme.$massoterapeuta-elisabete-theme, primary);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .initiation {
+    &__bg-image {
+      background-attachment: fixed;
+    }
+
+    &__logo {
+      width: 30rem;
+    }
+
+    &__location-button {
+      display: none;
+    }
+  }
+}

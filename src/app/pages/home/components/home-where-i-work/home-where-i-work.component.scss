@@ -1,0 +1,47 @@
+@use '@angular/material' as mat;
+@use '../../../../../assets/scss/theme.scss' as theme;
+
+.where-i-work {
+  scroll-margin-top: 4rem;
+  text-align: center;
+
+  &__container {
+    &__address {
+      margin-bottom: 0.5rem;
+    }
+
+    &__maps {
+      width: 100%;
+      height: 20rem;
+      border: 0;
+      margin-bottom: 1rem;
+    }
+
+    &__time {
+      margin: 1rem 0px 0.75rem;
+    }
+
+    mat-divider {
+      margin: 0.5rem 0px 1.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .where-i-work {
+    scroll-margin-top: 5rem;
+
+    &__container {
+      &__maps {
+        width: 100%;
+        border-radius: 5px;
+        margin: 0px auto 1rem;
+      }
+
+      &__whatsapp {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}

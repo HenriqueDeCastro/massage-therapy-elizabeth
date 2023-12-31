@@ -1,0 +1,17 @@
+@use '@angular/material' as mat;
+@use '../../../../../../assets/scss/theme.scss' as theme;
+
+.icon-bar {
+  width: 22px;
+  height: 2px;
+  margin: 3px;
+  position: relative;
+}
+
+.bg-accent {
+  background: mat.get-theme-color(theme.$massoterapeuta-elisabete-theme, accent);
+}
+
+.bg-primary {
+  background: black;
+}

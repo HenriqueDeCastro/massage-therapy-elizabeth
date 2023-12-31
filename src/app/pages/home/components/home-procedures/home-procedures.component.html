@@ -1,0 +1,21 @@
+<section class="procedures" [id]="sectionsEnum.PROCEDURES">
+  <div class="container">
+    <h3>Procedimentos</h3>
+    <div class="procedures__container">
+      @for (card of cards; track idx; let idx = $index) {
+        @defer (on viewport) {
+          <div class="procedures__container__card cursor"
+            [ngStyle]="{'background': card.background, 'color': card.color}"
+            [@slideLeftAnimation]="{ value: slideLeft, params: { time: '800ms', delay: idx} }">
+            <img [src]="card.image" [alt]="card.title">
+            <div class="procedures__container__card__text">
+              <h4>{{card.title}}</h4>
+            </div>
+          </div>
+        } @placeholder {
+          <div class="procedures__container__card"></div>
+        }
+      }
+    </div>
+  </div>
+</section>

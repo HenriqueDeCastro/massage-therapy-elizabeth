@@ -1,0 +1,31 @@
+@use '@angular/material' as mat;
+@use '../../../../assets/scss/theme.scss' as theme;
+
+.footer {
+  &__bg-primary {
+    background-color: mat.get-theme-color(theme.$massoterapeuta-elisabete-theme, primary);
+  }
+
+  &__logo {
+    display: flex;
+    width: 10rem;
+    margin: 0px auto;
+  }
+
+  &__copyright {
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    padding: 2rem 0px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    &__copyright {
+      font-size: 0.7rem;
+      text-align: start;
+    }
+  }
+}

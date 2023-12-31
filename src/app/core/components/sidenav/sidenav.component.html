@@ -1,0 +1,33 @@
+<nav>
+  <mat-toolbar class="toolbar" [ngClass]="scrollAtTop? 'toolbar--top': 'toolbar--not-top'">
+    <mat-toolbar-row>
+      @if(!scrollAtTop) {
+        <img src="../../../../assets/images/faveicon.svg" alt="Logo Igreja Comunidade Vida">
+      }
+      @if (innerWidth < 768) {
+        <massoterapeuta-elisabete-sidenav-button-menu class="toolbar__btn-menu"
+          [scrollAtTop]="scrollAtTop" [isHamburguer]="!this.sidenav.opened" (changed)="toggleSidenav()">
+        </massoterapeuta-elisabete-sidenav-button-menu>
+      } @else {
+        <massoterapeuta-elisabete-sidenav-routes class="toolbar__routes"></massoterapeuta-elisabete-sidenav-routes>
+      }
+    </mat-toolbar-row>
+  </mat-toolbar>
+</nav>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav [fixedInViewport]="true" mode="over">
+      <div class="sidenav-content">
+        <massoterapeuta-elisabete-sidenav-routes class="toolbar__routes" (closeSidenav)="toggleSidenav()"></massoterapeuta-elisabete-sidenav-routes>
+        <div class="sidenav-content__copyright">© {{currentYear}} Massoterapeuta Elisabete.</div>
+      </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <main>
+      <ng-content select="[main]"></ng-content>
+    </main>
+    <footer>
+      <ng-content select="[footer]"></ng-content>
+    </footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>

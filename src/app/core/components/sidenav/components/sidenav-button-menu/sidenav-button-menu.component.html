@@ -1,0 +1,5 @@
+<div (click)="toggleIcon()" class="cursor">
+  <div class="icon-bar" [ngClass]="scrollAtTop? 'bg-accent': 'bg-primary'" [@hamburguerX]="isHamburguer ? 'hamburguer' : 'topX'"></div>
+  <div class="icon-bar" [ngClass]="scrollAtTop? 'bg-accent': 'bg-primary'" [@hamburguerX]="isHamburguer ? 'hamburguer' : 'hide'"></div>
+  <div class="icon-bar" [ngClass]="scrollAtTop? 'bg-accent': 'bg-primary'" [@hamburguerX]="isHamburguer ? 'hamburguer' : 'bottomX'"></div>
+</div>

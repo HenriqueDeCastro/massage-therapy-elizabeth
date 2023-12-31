@@ -1,10 +1,32 @@
-html, body { height: 100%; margin: 0; background-color: var(--light-brandy); }
-h1, h2, h3, p { margin: 0; }
-h1 { font-family: 'Allura', cursive; }
-p { font-family: 'Montserrat', sans-serif; white-space: normal; }
+@use '@angular/material' as mat;
+@use './assets/scss/animations.scss' as animations;
+@use './assets/scss/theme.scss' as theme;
+@use './assets/scss/generics.scss' as generics;
 
-:root {
-  --solid-brandy: #E4B48A;
-  --light-brandy: #F3DFCD;
-  --dark-brown: #4D2E14
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; letter-spacing: 3px; }
+
+* {
+  -webkit-tap-highlight-color: transparent;
 }
+
+p { letter-spacing: 2px; margin: 0; font-weight: 300; }
+
+button { letter-spacing: 3px; }
+
+section {
+  margin-bottom: 6rem;
+}
+
+h1, h2, h3 {
+  color: mat.get-theme-color(theme.$massoterapeuta-elisabete-theme, primary);
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 3rem 0px;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
