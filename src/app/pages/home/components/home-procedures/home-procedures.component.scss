@@ -5,8 +5,8 @@
   scroll-margin-top: 4rem;
 
   &__container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
     gap: 0.75rem;
 
     &__card {
@@ -40,12 +40,9 @@
     scroll-margin-top: 5rem;
 
     &__container {
-      flex-direction: row;
-      flex-wrap: wrap;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
 
-      &__card {
-        width: 49%;
-      }
     }
   }
 }
