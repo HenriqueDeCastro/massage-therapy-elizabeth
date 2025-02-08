@@ -16,6 +16,10 @@ button { letter-spacing: 3px; }
 
 section {
   margin-bottom: 6rem;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 h1, h2, h3 {
